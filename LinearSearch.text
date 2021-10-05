@@ -1,0 +1,34 @@
+Linear search is the simplest search algorithm and often it is called sequential search.
+In this type of searching,we simply traverse the list completely and match each element of the list with the item whose location is to be found.
+If the match found then location of the item is returned otherwise the algorithm return *Null*.
+
+Linear search is mostly used to search an unordered list in which the items are not sorted. 
+
+
+The algorithm of linear search is given as follows --- 
+
+LINEAR_SEARCH(A, N, VAL)
+Step 1: [INITIALIZE] SET POS = -1
+Step 2: [INITIALIZE] SET I = 1
+Step 3: Repeat Step 4 while I<=N
+Step 4: IF A[I] = VAL
+           SET POS = I
+           PRINT POS
+           Go to Step 6
+         [END OF IF]
+        SET I = I + 1
+        [END OF LOOP]
+Step 5: IF POS = -1
+          PRINT " VALUE IS NOT PRESENTIN THE ARRAY "
+        [END OF IF]
+Step 6: EXIT
+
+
+
+
+
+Time Complexity of algorithm------
+
+Best Case : O(1)
+Average Case : O(n)
+Worst Case : O(n)
